@@ -1,0 +1,37 @@
+<instance description="" template="ai_ability">
+	<group name="ai_ability_bag">
+		<list name="abilities">
+			<instance_reference name="ability" value="abilities\02-dispatch\aef\rifle\lt_mech_inf" mod="2b67f788b2974fce81d5ecd2e7244e42" />
+			<instance_reference name="ability" value="abilities\02-dispatch\aef\rifle\rifle_squad_at" mod="2b67f788b2974fce81d5ecd2e7244e42" />
+			<instance_reference name="ability" value="abilities\02-dispatch\aef\rifle\rifle_squad_bar" mod="2b67f788b2974fce81d5ecd2e7244e42" />
+			<instance_reference name="ability" value="abilities\02-dispatch\aef\rifle\rifle_squad_hq_at" mod="2b67f788b2974fce81d5ecd2e7244e42" />
+			<instance_reference name="ability" value="abilities\02-dispatch\aef\rifle\rifle_squad_hq_gren" mod="2b67f788b2974fce81d5ecd2e7244e42" />
+			<instance_reference name="ability" value="abilities\02-dispatch\aef\rifle\rifle_squad_thom" mod="2b67f788b2974fce81d5ecd2e7244e42" />
+		</list>
+		<group name="ai_tactic">
+			<string name="entity_target_filter" value="" />
+			<string name="position_target_filter" value="" />
+			<float name="priority" value="100" />
+			<string name="squad_target_filter" value="SquadTargetFilter_BestEnemyInfantryGrenade" />
+			<string name="tactic_filter_start" value="" />
+			<float name="tactic_max_range_override" value="-1" />
+			<enum_table name="class">
+				<bool name="tactic_Combat" value="False" />
+				<bool name="tactic_OnTask" value="False" />
+				<bool name="tactic_Moving" value="False" />
+			</enum_table>
+			<string name="tactic_filter_abort" value="" />
+			<float name="tactic_min_range_override" value="-1" />
+		</group>
+		<group name="ai_tactic_toggle_off">
+			<enum_table name="class">
+				<bool name="tactic_Combat" value="False" />
+				<bool name="tactic_OnTask" value="False" />
+				<bool name="tactic_Moving" value="False" />
+			</enum_table>
+			<float name="priority" value="-1" />
+			<string name="tactic_filter_start" value="" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="1073741823" />
+</instance>
